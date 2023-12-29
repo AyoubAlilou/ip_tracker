@@ -1,12 +1,11 @@
 import './Home.css'
 
-
 import React from 'react'
 
 function Home() {
   return (
     <div>
-      Homeeeeeeeeeeeeeeeeee
+      Homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
     </div>
   )
 }
