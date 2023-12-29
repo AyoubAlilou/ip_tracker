@@ -1,26 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { Toolbar, AppBar, Avatar, Link, Typography } from '@mui/material'
-
+import Appbarrr from '../Components/Appbarrr'
+import Drawerr from '../Components/Drawer'
+const drawerWidth = 240
 function Root() {
   return (
     <div>
-      <AppBar position='static'>
-        <Toolbar>
-          <Link
-            underline='none'
-            color='inherit'
-            href='/'
-            sx={{ flexGrow: 1, '&:hover': { fontSize: '16.5px' } }}
-          >
-            My expenses
-          </Link>
-          <Typography mr={2} variant='body1' color='inherit'>
-            Ayoub Alilou
-          </Typography>
-          <Avatar alt='Remy Sharp' src='.\images\zabour.jpg' />
-        </Toolbar>
-      </AppBar>
+      <Appbarrr drawerWidth={drawerWidth} />
+      <Drawerr drawerWidth={drawerWidth} />
       <Outlet />
     </div>
   )
